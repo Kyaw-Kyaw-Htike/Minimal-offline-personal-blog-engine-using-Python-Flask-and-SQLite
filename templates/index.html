@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to home page</title>
+</head>
+<body>
+
+<h1>Categories</h1>
+
+{% for cc in category_list: %}
+    <p><a href="/posts_in_given_category/{{cc}}">{{cc}}</a></p>
+{% endfor %}
+
+<h1>Tags</h1>
+
+{% for tt in tag_list: %}
+    <p><a href="/posts_in_given_tag/{{tt}}">{{tt}}</a></p>
+{% endfor %}
+
+</body>
+</html>
+
